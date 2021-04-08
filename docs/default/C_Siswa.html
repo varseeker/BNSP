@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Docs For Class C_Siswa</title>
+  <link rel="stylesheet" href="../media/stylesheet.css" />
+  <script src="../media/lib/classTree.js"></script>
+<link id="webfx-tab-style-sheet" type="text/css" rel="stylesheet" href="../media/lib/tab.webfx.css" />
+<script type="text/javascript" src="../media/lib/tabpane.js"></script>
+  <script language="javascript" type="text/javascript" src="../media/lib/ua.js"></script>
+<script language="javascript" type="text/javascript">
+	var imgPlus = new Image();
+	var imgMinus = new Image();
+	imgPlus.src = "../media/images/plus.gif";
+	imgMinus.src = "../media/images/minus.gif";
+	
+	function showNode(Node){
+        switch(navigator.family){
+        	case 'nn4':
+        		// Nav 4.x code fork...
+				var oTable = document.layers["span" + Node];
+				var oImg = document.layers["img" + Node];
+        		break;
+        	case 'ie4':
+        		// IE 4/5 code fork...
+				var oTable = document.all["span" + Node];
+				var oImg = document.all["img" + Node];
+        		break;
+        	case 'gecko':
+        		// Standards Compliant code fork...
+				var oTable = document.getElementById("span" + Node);
+				var oImg = document.getElementById("img" + Node);
+        		break;
+        }
+		oImg.src = imgMinus.src;
+		oTable.style.display = "block";
+	}
+	
+	function hideNode(Node){
+        switch(navigator.family){
+        	case 'nn4':
+        		// Nav 4.x code fork...
+				var oTable = document.layers["span" + Node];
+				var oImg = document.layers["img" + Node];
+        		break;
+        	case 'ie4':
+        		// IE 4/5 code fork...
+				var oTable = document.all["span" + Node];
+				var oImg = document.all["img" + Node];
+        		break;
+        	case 'gecko':
+        		// Standards Compliant code fork...
+				var oTable = document.getElementById("span" + Node);
+				var oImg = document.getElementById("img" + Node);
+        		break;
+        }
+		oImg.src = imgPlus.src;
+		oTable.style.display = "none";
+	}
+	
+	function nodeIsVisible(Node){
+        switch(navigator.family){
+        	case 'nn4':
+        		// Nav 4.x code fork...
+				var oTable = document.layers["span" + Node];
+        		break;
+        	case 'ie4':
+        		// IE 4/5 code fork...
+				var oTable = document.all["span" + Node];
+        		break;
+        	case 'gecko':
+        		// Standards Compliant code fork...
+				var oTable = document.getElementById("span" + Node);
+        		break;
+        }
+		return (oTable && oTable.style.display == "block");
+	}
+	
+	function toggleNodeVisibility(Node){
+		if (nodeIsVisible(Node)){
+			hideNode(Node);
+		}else{
+			showNode(Node);
+		}
+	}
+</script>
+<!-- template designed by Julien Damon based on PHPEdit's generated templates, and tweaked by Greg Beaver -->
+<body bgcolor="#ffffff" ><!-- Start of Class Data -->
+<h2>
+	Class C_Siswa
+</h2> (line <span class="linenumber">14</span>)
+<div class="tab-pane" id="tabPane1">
+<script type="text/javascript">
+tp1 = new WebFXTabPane( document.getElementById( "tabPane1" ));
+</script>
+
+<div class="tab-page" id="Description">
+<h2 class="tab">Description</h2>
+<pre>
+BaseController
+   |
+   --<a href="../default/Controller.html">Controller</a>
+      |
+      --C_Siswa</pre>
+<p>
+	<b><i>Located in File: <a href="_C_Siswa.php.html">/C_Siswa.php</a></i></b><br>
+</p>
+<!-- ========== Info from phpDoc block ========= -->
+<h5>Controller untuk menghubungkan model siswa/i dengan segala aktifitas website.</h5>
+<ul>
+		<li><strong>author:</strong> - Muhammad Ibadurrahman Al-ahsan</li>
+		<li><strong>version:</strong> - Laravel 7.0</li>
+	</ul>
+<br /><hr />
+</div>
+<script type="text/javascript">tp1.addTabPage( document.getElementById( "Description" ) );</script>
+<div class="tab-page" id="tabPage1">
+
+<h2 class="tab">Class Variables</h2>
+<!-- ============ VARIABLE DETAIL =========== -->
+<strong>Summary:</strong><br />
+<hr />
+<script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage1" ) );</script>
+</div>
+<div class="tab-page" id="constantsTabpage">
+
+<h2 class="tab">Class Constants</h2>
+<!-- ============ VARIABLE DETAIL =========== -->
+<strong>Summary:</strong><br />
+<hr />
+<script type="text/javascript">tp1.addTabPage( document.getElementById( "constantsTabpage" ) );</script>
+</div>
+<div class="tab-page" id="tabPage2">
+<h2 class="tab">Method Detail</h2>
+<!-- ============ METHOD DETAIL =========== -->
+<strong>Summary:</strong><br />
+<div class="method-summary">
+    <div class="method-definition">
+            <span class="method-result">void</span>
+        <a href="#methodcari" title="details" class="method-name">cari</a>
+        (<span class="var-type">Request</span>&nbsp;<span class="var-name">$request</span>)
+        </div>
+    <div class="method-definition">
+            <span class="method-result">\Illuminate\Http\Response</span>
+        <a href="#methodcreate" title="details" class="method-name">create</a>
+    
+Warning: count(): Parameter must be an array or an object that implements Countable in I:\BNSP_Ibad\BNSP\docs\default\0b413fe85d036913b30a83aa1811ef9c\%%288^%%2887425715^method.tpl.php on line 105
+    ()
+        </div>
+    <div class="method-definition">
+            <span class="method-result">\Illuminate\Http\Response</span>
+        <a href="#methoddestroy" title="details" class="method-name">destroy</a>
+        (<span class="var-type">int</span>&nbsp;<span class="var-name">$siswa</span>)
+        </div>
+    <div class="method-definition">
+            <span class="method-result">\Illuminate\Http\Response</span>
+        <a href="#methodedit" title="details" class="method-name">edit</a>
+        (<span class="var-type">int</span>&nbsp;<span class="var-name">$siswa</span>)
+        </div>
+    <div class="method-definition">
+            <span class="method-result">\Illuminate\Http\Response</span>
+        <a href="#methodindex" title="details" class="method-name">index</a>
+    
+Warning: count(): Parameter must be an array or an object that implements Countable in I:\BNSP_Ibad\BNSP\docs\default\0b413fe85d036913b30a83aa1811ef9c\%%288^%%2887425715^method.tpl.php on line 105
+    ()
+        </div>
+    <div class="method-definition">
+            <span class="method-result">\Illuminate\Http\Response</span>
+        <a href="#methodshow" title="details" class="method-name">show</a>
+        (<span class="var-type">int</span>&nbsp;<span class="var-name">$siswa</span>)
+        </div>
+    <div class="method-definition">
+            <span class="method-result">\Illuminate\Http\Response</span>
+        <a href="#methodstore" title="details" class="method-name">store</a>
+        (<span class="var-type">Request</span>&nbsp;<span class="var-name">$request</span>)
+        </div>
+    <div class="method-definition">
+            <span class="method-result">\Illuminate\Http\Response</span>
+        <a href="#methodupdate" title="details" class="method-name">update</a>
+        (<span class="var-type">Request</span>&nbsp;<span class="var-name">$request</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$siswa</span>)
+        </div>
+</div>
+<hr />
+<A NAME='method_detail'></A>
+
+
+<a name="methodcari" id="methodcari"><!-- --></a>
+<div style="background='#ffffff'"><h4>
+<img src="../media/images/PublicMethod.gif" border="0" /> <strong class="method">Method cari</strong> (line <span class="linenumber">30</span>)
+ </h4> 
+<h4><i>void</i> <strong>cari(
+Request
+$request)</strong></h4>
+
+	<!-- ========== Info from phpDoc block ========= -->
+		<h4>Parameters</h4>
+	<ul>
+			<li><strong>Request $request</strong>: </li>
+		</ul>
+		
+	<h4>Info</h4>
+	<ul>
+			<li><strong>access</strong> - public</li>
+		</ul>
+</div>
+<a name="methodcreate" id="methodcreate"><!-- --></a>
+<div style="background='#eeeeee'"><h4>
+<img src="../media/images/PublicMethod.gif" border="0" /> <strong class="method">Method create</strong> (line <span class="linenumber">50</span>)
+ </h4> 
+<h4><i>\Illuminate\Http\Response</i> <strong>create(
+
+Warning: count(): Parameter must be an array or an object that implements Countable in I:\BNSP_Ibad\BNSP\docs\default\0b413fe85d036913b30a83aa1811ef9c\%%288^%%2887425715^method.tpl.php on line 324
+)</strong></h4>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<h5>Show the form for creating a new resource.</h5>
+		
+	<h4>Info</h4>
+	<ul>
+			<li><strong>access</strong> - public</li>
+		</ul>
+</div>
+<a name="methoddestroy" id="methoddestroy"><!-- --></a>
+<div style="background='#ffffff'"><h4>
+<img src="../media/images/PublicMethod.gif" border="0" /> <strong class="method">Method destroy</strong> (line <span class="linenumber">121</span>)
+ </h4> 
+<h4><i>\Illuminate\Http\Response</i> <strong>destroy(
+int
+$siswa)</strong></h4>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<h5>Remove the specified resource from storage.</h5>
+		<h4>Parameters</h4>
+	<ul>
+			<li><strong>int $siswa</strong>: </li>
+		</ul>
+		
+	<h4>Info</h4>
+	<ul>
+			<li><strong>access</strong> - public</li>
+		</ul>
+</div>
+<a name="methodedit" id="methodedit"><!-- --></a>
+<div style="background='#eeeeee'"><h4>
+<img src="../media/images/PublicMethod.gif" border="0" /> <strong class="method">Method edit</strong> (line <span class="linenumber">87</span>)
+ </h4> 
+<h4><i>\Illuminate\Http\Response</i> <strong>edit(
+int
+$siswa)</strong></h4>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<h5>Show the form for editing the specified resource.</h5>
+		<h4>Parameters</h4>
+	<ul>
+			<li><strong>int $siswa</strong>: </li>
+		</ul>
+		
+	<h4>Info</h4>
+	<ul>
+			<li><strong>access</strong> - public</li>
+		</ul>
+</div>
+<a name="methodindex" id="methodindex"><!-- --></a>
+<div style="background='#ffffff'"><h4>
+<img src="../media/images/PublicMethod.gif" border="0" /> <strong class="method">Method index</strong> (line <span class="linenumber">21</span>)
+ </h4> 
+<h4><i>\Illuminate\Http\Response</i> <strong>index(
+
+Warning: count(): Parameter must be an array or an object that implements Countable in I:\BNSP_Ibad\BNSP\docs\default\0b413fe85d036913b30a83aa1811ef9c\%%288^%%2887425715^method.tpl.php on line 324
+)</strong></h4>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<h5>Display a listing of the resource.</h5>
+		
+	<h4>Info</h4>
+	<ul>
+			<li><strong>access</strong> - public</li>
+		</ul>
+</div>
+<a name="methodshow" id="methodshow"><!-- --></a>
+<div style="background='#eeeeee'"><h4>
+<img src="../media/images/PublicMethod.gif" border="0" /> <strong class="method">Method show</strong> (line <span class="linenumber">74</span>)
+ </h4> 
+<h4><i>\Illuminate\Http\Response</i> <strong>show(
+int
+$siswa)</strong></h4>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<h5>Display the specified resource.</h5>
+		<h4>Parameters</h4>
+	<ul>
+			<li><strong>int $siswa</strong>: </li>
+		</ul>
+		
+	<h4>Info</h4>
+	<ul>
+			<li><strong>access</strong> - public</li>
+		</ul>
+</div>
+<a name="methodstore" id="methodstore"><!-- --></a>
+<div style="background='#ffffff'"><h4>
+<img src="../media/images/PublicMethod.gif" border="0" /> <strong class="method">Method store</strong> (line <span class="linenumber">61</span>)
+ </h4> 
+<h4><i>\Illuminate\Http\Response</i> <strong>store(
+Request
+$request)</strong></h4>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<h5>Store a newly created resource in storage.</h5>
+		<h4>Parameters</h4>
+	<ul>
+			<li><strong>\Illuminate\Http\Request $request</strong>: </li>
+		</ul>
+		
+	<h4>Info</h4>
+	<ul>
+			<li><strong>access</strong> - public</li>
+		</ul>
+</div>
+<a name="methodupdate" id="methodupdate"><!-- --></a>
+<div style="background='#eeeeee'"><h4>
+<img src="../media/images/PublicMethod.gif" border="0" /> <strong class="method">Method update</strong> (line <span class="linenumber">101</span>)
+ </h4> 
+<h4><i>\Illuminate\Http\Response</i> <strong>update(
+Request
+$request, int
+$siswa)</strong></h4>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<h5>Update the specified resource in storage.</h5>
+		<h4>Parameters</h4>
+	<ul>
+			<li><strong>\Illuminate\Http\Request $request</strong>: </li>
+			<li><strong>int $siswa</strong>: </li>
+		</ul>
+		
+	<h4>Info</h4>
+	<ul>
+			<li><strong>access</strong> - public</li>
+		</ul>
+</div>
+<script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage2" ) );</script></div>
+<div class="tab-page" id="iVars">
+<h2 class="tab">Inherited Variables</h2>
+<script type="text/javascript">tp1.addTabPage( document.getElementById( "iVars" ) );</script>
+<!-- =========== VAR INHERITED SUMMARY =========== -->
+<A NAME='var_inherited_summary'><!-- --></A>
+<h3>Inherited Class Variable Summary</h3>
+
+	</div>
+<div class="tab-page" id="iMethods">
+<h2 class="tab">Inherited Methods</h2>
+<script type="text/javascript">tp1.addTabPage( document.getElementById( "iMethods" ) );</script>
+<!-- =========== INHERITED METHOD SUMMARY =========== -->
+<A NAME='functions_inherited'><!-- --></A>
+<h3>Inherited Method Summary</h3>
+
+	</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+
+setupAllTabs();
+
+//]]>
+</script>
+	<div id="credit">
+		<hr />
+		Documentation generated on Wed, 23 Dec 2020 08:07:34 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</div>
+</body>
+</html>
